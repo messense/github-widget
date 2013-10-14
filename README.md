@@ -11,20 +11,20 @@ First, include the JavaScript file in your webpage, and put css files and fonts 
 HTML Makeup
 -------------
 ```html
-   <div id="github-widget" data-user="github" data-count="10" data-sortby="pushed_at"></div>
+<div id="github-widget" data-user="github" data-count="10" data-sortby="pushed_at"></div>
 ```
 `data-*` attributes are optional, you can pass them when calling the function `githubwidget` if you like.
 
 Script
 -------------
 ```javascript
-    jQuery(document).ready(function ($) {
-        $('#github-widget').githubwidget({
-        	user: 'github',
-        	count: 0,
-        	sortby: 'pushed_at'
-        })
-    });
+jQuery(document).ready(function ($) {
+    $('#github-widget').githubwidget({
+        user: 'github',
+        count: 0,
+        sortby: 'pushed_at'
+    })
+});
 ```
 `user` for your Github username, `count` for how many repositories you want to show (show all repositories if count equals 0). `sortby` for sort the result in that order.
 
